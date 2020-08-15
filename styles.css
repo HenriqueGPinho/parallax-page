@@ -1,0 +1,101 @@
+:root {
+  font-size: 60%;
+}
+
+body, h1, h2, p {
+  margin: 0;
+}
+
+.bg-image, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bg-image {
+  background-color: #aaa;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image div {
+  margin-bottom: 30vh;
+}
+
+.main-title, 
+.subtitle, 
+.image-title, 
+.section-title {
+  color: #eee;
+  text-shadow: .1rem .1rem .3rem #000;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+
+}
+
+.image-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  background-color: #333;
+  padding: 4rem;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.section-content {
+  max-width: 720px;
+  text-indent: 4rem;
+  font-size: 1.6rem;
+  text-align: justify;
+  color: #ccc;
+}
+
+.first-image {
+  background-image: url(./img/downtown_highway_light.jpg);
+  height: 100vh;
+  opacity: 80%;
+}
+
+.second-image {
+  background-image: url(./img/singapore.jpg);
+  height: 60vh;
+}
+
+.third-image {
+  background-image: url(./img/skyline-of-moscow.jpg);
+  height: 60vh;
+}
+
+.fourth-image {
+  background-image: url(./img/Mumbai_Night_City.jpg);
+  height: 60vh;
+}
+
+.fifth-image {
+  background-image: url(./img/Brisbane_City_Night.jpg);
+  height: 60vh;
+}
+
+@media (min-width: 720px) {
+  .bg-image {
+    background-attachment: fixed;
+  }
+}
